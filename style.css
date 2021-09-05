@@ -8,20 +8,22 @@
 }
 
 /*logo*/
-.logo{
-    display:flex;
+.logo {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .fa-camera {
-    color:white;
+    color: white;
     text-shadow: 0 0 6px #000;
 }
 
 
-h3,h2 {
-    margin:0 20px;
+h3, h2 {
+    margin: 0 20px;
 }
+
 span {
     font-weight: bold;
 }
@@ -32,13 +34,14 @@ body {
     color: #bbbbbb;
     font-family: Montserrat, Arial, sans-serif;
 }
+
 .heading {
     font-size: 24px;
     text-align: center;
-    margin:30px 0 20px 0;
+    margin: 30px 0 20px 0;
 }
 
-.white ,a {
+.white, a {
     color: whitesmoke;
 }
 
@@ -59,7 +62,7 @@ a:hover {
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
-    margin:15px -15px;
+    margin: 15px -15px;
 }
 
 .justify-content-between {
@@ -94,6 +97,30 @@ img {
     transition: .5s;
     box-shadow: 0 0 12px white;
 
+}
+
+/*высплывающий текст при наведении на фото*/
+.img-block {
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    bottom: 0;
+    right: 0;
+    top: 10%;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+    color: black;
+    font-weight: bold;
+}
+
+.img-block:hover .block {
+    display: block;
+    padding: 10%;
 }
 
 /*menu*/
