@@ -1,10 +1,10 @@
-$main-text-color:#bbbbbb;
-$attention-text-color:whitesmoke;
-$main-font:Montserrat, Arial, sans-serif;
-@mixin column($fg,$fs,$fb){
-  flex-grow:$fg;
-  flex-shrink:$fs;
-  flex-basis:$fb;
+$main-text-color: #bbbbbb;
+$attention-text-color: whitesmoke;
+$main-font: Montserrat, Arial, sans-serif;
+@mixin column($fg,$fs,$fb) {
+  flex-grow: $fg;
+  flex-shrink: $fs;
+  flex-basis: $fb;
 }
 
 /*common style*/
@@ -65,6 +65,7 @@ nav ul a:hover {
   top: 20px;
   width: 30px;
 }
+
 /**/
 
 h3, h2 {
@@ -122,7 +123,7 @@ body {
 }
 
 .column-2 {
-  @include column(0,0,50%);
+  @include column(0, 0, 50%);
   //flex: 0 0 50%;
 }
 
@@ -151,10 +152,10 @@ img {
   position: absolute;
   height: min-content;
   width: 80%;
-  left:0;
+  left: 0;
   bottom: 0;
   right: 0;
-  top:0;
+  top: 0;
   background: rgba(255, 255, 255, 0.7);
   display: none;
   color: black;
@@ -162,7 +163,7 @@ img {
   margin: 5% auto;
 }
 
-.block h3{
+.block h3 {
   margin-left: 0;
 }
 
